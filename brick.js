@@ -6,13 +6,13 @@ class Brick{
     margin;
     hard;
     isBroke;
-    constructor(x,y) {
+    constructor(x,y,hard) {
         this.x = x;
         this.y = y;
         this.width = brickWidth;
         this.height = brickHeight;
         this.margin = brickMargin;
-        this.hard = 3;
+        this.hard = hard;
         this.isBroke = false;
     }
     drawBrick(x){

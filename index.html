@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-
+    <style>
+        body{
+            background-color: #FFE4E1;
+        }
+        canvas{
+            margin-left: 30%;
+        }
+        #point{
+            margin-left: 30%;
+            padding-top: 5%;
+            font-size: 30px;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+        }
+    </style>
 </head>
-<body>
+<body onload="begin()">
+<p id="point">Your point: 00</p>
 <canvas width="800" height="700" style="border: 1px solid" id="play1" ></canvas>
-<button onclick="drawCanvas()">Run</button>
 <script src="pad.js"></script>
 <script src="ball.js"></script>
 <script src="brick.js"></script>
+<script src="bonus.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
